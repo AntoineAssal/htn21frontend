@@ -5,7 +5,13 @@ import App from './App';
 import * as serviceWorker from "./serviceworker";
 
 import "./assets/style.css";
-import "./assets/responsive.css";
+import "./assets/animate.css";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "popper.js";
 
 
 const loader = document.querySelector('#loader');

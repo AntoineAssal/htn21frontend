@@ -1,5 +1,67 @@
 /*============== header_area css ==============*/
 
+/*=== fonts ====*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
+/*===== color =====*/
+
+/*====================================================*/
+
+/*====================================================*/
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+.row.m0 {
+    margin: 0px;
+}
+
+.p0 {
+    padding: 0px;
+}
+
+i:before {
+    margin-left: 0px !important;
+}
+
+body {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+    color: #677294;
+    padding: 0px;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.body_wrapper {
+    z-index: 20;
+    overflow: hidden;
+}
+
+a, .btn, button {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 .header_area {
     position: fixed;
     width: 100%;
@@ -7,23 +69,6 @@
     top: 0;
     left: 0;
 }
-
-.navbar-logo img {
-    display: none;
-}
-
-.navbar-logo img+img {
-    display: block;
-}
-
-.sticky_logo img {
-    display: block;
-}
-
-.sticky_logo img+img {
-    display: none;
-}
-
 
 .landing_area {
     padding-top: 225px;
@@ -104,26 +149,7 @@
     }
 }
 
-.menu>.nav-item {
-    position: relative;
-    padding-bottom: 35px;
-    padding-top: 35px;
-}
-
-.menu>.nav-item>.nav-link {
-    font: 500 15px "Poppins", sans-serif;
-    color: #051441;
-    padding: 0px;
-    -webkit-transition: color 0.3s ease 0s;
-    -o-transition: color 0.3s ease 0s;
-    transition: color 0.3s ease 0s;
-    position: relative;
-    cursor: pointer;
-}
-
-.menu>.nav-item>.nav-link:after {
-    display: none;
-}
+/*=============== banner css ===============*/
 
 .home_banner_area {
     position: relative;
@@ -172,6 +198,148 @@
     width: 816px;
     height: 702px;
 }
+
+.animation_img_two {
+    width: 50%;
+    height: 60%;
+    float: right;
+    text-align: right;
+    position: absolute;
+    bottom: 188px;
+    right: 0;
+    z-index: 0;
+}
+
+.animation_img_two img {
+    max-width: 100%;
+}
+
+.svg_intro_bottom {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.home_banner_content {
+    max-width: 670px;
+}
+
+.home_banner_content h1 {
+    line-height: 70px;
+    margin-bottom: 25px;
+}
+
+.home_banner_content p {
+    line-height: 30px;
+}
+
+.home_banner_content .banner_btn {
+    background: #fff;
+    color: #5956fe;
+    border-color: #fff;
+}
+
+.home_banner_content .banner_btn_two {
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.home_banner_content .banner_btn_two:before {
+    display: none;
+}
+
+.home_banner_content .banner_btn_two i {
+    vertical-align: middle;
+    padding-left: 10px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.home_banner_content .banner_btn_two:hover i {
+    padding-left: 15px;
+}
+
+.features_area .bg_shape {
+    position: absolute;
+    background-color: #fafbff;
+    width: 1100px;
+    height: 1775px;
+    display: block;
+    border-radius: 120px;
+    z-index: -1;
+}
+
+.features_area .feature1_img {
+    margin-left: -190px;
+}
+
+.features_area .feature1_img.img_two {
+    margin-right: -190px;
+    margin-left: 0px;
+}
+
+.features_area .shape_one {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: -669px;
+    top: -80px;
+}
+
+.features_area .shape_two {
+    left: -669px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-43deg);
+    top: 275px;
+    width: 870px;
+}
+
+.features_area .shape_three {
+    bottom: -29%;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: -100px;
+    width: 988px;
+    height: 1022px;
+}
+
+.features_content .icon {
+    display: inline-block;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 40px;
+  }
+  
+  .features_content .icon .icon_img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -23px;
+    margin-left: -11px;
+  }
+  
+  .features_content h2 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #051441;
+    margin-bottom: 15px;
+  }
+  
+  .features_content p {
+    font-size: 18px;
+    color: #677294;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  
+
+/*=========== font- size ==============*/
 
 .f_size_50 {
     font-size: 50px;
@@ -427,6 +595,8 @@
     padding: 120px 0px;
 }
 
+/*============== loader spinning css ==============*/
+
 @-webkit-keyframes spinner {
     to {
         -webkit-transform: rotateZ(360deg);
@@ -500,16 +670,16 @@
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
     cursor: pointer;
-  }
-  
-  .banner_btn:hover {
+}
+
+.banner_btn:hover {
     color: #8AC99C;
     -webkit-box-shadow: none;
     box-shadow: none;
     background: transparent;
-  }
-  
-  .banner_btn_two {
+}
+
+.banner_btn_two {
     font: 500 14px "Poppins", sans-serif;
     color: #222d39;
     position: relative;
@@ -517,9 +687,9 @@
     -webkit-transition: color 0.2s linear;
     -o-transition: color 0.2s linear;
     transition: color 0.2s linear;
-  }
-  
-  .banner_btn_two:before {
+}
+
+.banner_btn_two:before {
     content: "";
     width: 100%;
     height: 1px;
@@ -530,13 +700,65 @@
     -webkit-transition: background 0.2s linear;
     -o-transition: background 0.2s linear;
     transition: background 0.2s linear;
-  }
-  
-  .banner_btn_two:hover {
+}
+
+.banner_btn_two:hover {
     color: #8AC99C;
-  }
-  
-  .banner_btn_two:hover:before {
+}
+
+.banner_btn_two:hover:before {
     background: #8AC99C;
-  }
-  
+}
+
+.banner_btn {
+    font: 500 14px "Poppins", sans-serif;
+    color: #fff;
+    background: #5e2ced;
+    -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+    box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
+    border-radius: 3px;
+    padding: 16px 38px;
+    border: 1px solid #5e2ced;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.banner_btn:hover {
+    color: #5e2ced;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.banner_btn_two {
+    font: 500 14px "Poppins", sans-serif;
+    color: #222d39;
+    position: relative;
+    margin-left: 50px;
+    -webkit-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+
+.banner_btn_two:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #60656d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+}
+
+.banner_btn_two:hover {
+    color: #5e2ced;
+}
+
+.banner_btn_two:hover:before {
+    background: #5e2ced;
+}
