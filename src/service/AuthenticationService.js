@@ -1,4 +1,4 @@
-URL = "https://priceisthegoatbackend.herokuapp.com"
+const BACKEND_URL = "https://priceisthegoatbackend.herokuapp.com"
 
 export const register = async (request) => {
   try {
@@ -15,7 +15,7 @@ export const register = async (request) => {
   }
 };
 
-export const authenticate = async () => {
+export const authenticate = async (values) => {
   try {
     const apiRes = await fetch(`${BACKEND_URL}/login`, {
       headers: {

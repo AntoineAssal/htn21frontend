@@ -13,7 +13,7 @@ class LandingFeatures extends Component {
                         <div className="col-lg-6">
                             <Reveal effect="fadeInLeft">
                                 <div className="feature1_img">
-                                    <img src={require("../img/home/feature1.png")} alt="" />
+                                    <img src={require("../img/home/feature2.png")} alt="" />
                                 </div>
                             </Reveal>
                         </div>
@@ -34,7 +34,7 @@ class LandingFeatures extends Component {
                         <div className="col-lg-6">
                             <Reveal effect="fadeInRight" duration={800}>
                                 <div className="feature1_img img_two">
-                                    <img src={require("../img/home/feature2.png")} alt="" />
+                                    <img src={require("../img/home/feature1.png")} alt="" />
                                 </div>
                             </Reveal>
                         </div>
