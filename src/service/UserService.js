@@ -1,6 +1,6 @@
 export const getUserInfo = async () => {
     try {
-        const apiRes = await fetch(`${BACKEND_URL}/user`, {
+        const apiRes = await fetch(`${BACKEND_URL}/api/user`, {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -14,7 +14,7 @@ export const getUserInfo = async () => {
 
 export const getUserById = async (id) => {
     try {
-        const apiRes = await fetch(`${BACKEND_URL}/${id}`, {
+        const apiRes = await fetch(`${BACKEND_URL}/api/user/${id}`, {
             headers: {
                 'Content-Type': 'application/json',
             },
