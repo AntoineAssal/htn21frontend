@@ -5,7 +5,7 @@ import APITest from "../components/APITest";
 
 const Landingpage = () => {
     return(
-        <div className="body_wrapper">
+        <div>
             <LandingBanner/>
             <LandingFeatures/>
             </div>
