@@ -11,8 +11,6 @@ import NotFound from "./Pages/404";
 
 class App extends Component {
   componentDidMount() {
-    const ff = axios.get("https://priceisthegoatbackend.herokuapp.com/api/user/1");
-    console.log(ff);
     this.props.hideLoader();
   }
 

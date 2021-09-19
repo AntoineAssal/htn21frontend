@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Reveal from 'react-reveal/Reveal';
 
-class PaymentFeatures extends Component {
+class LandingFeatures extends Component {
     render() {
         return (
             <section className="features_area">
@@ -56,4 +56,4 @@ class PaymentFeatures extends Component {
         )
     }
 }
-export default PaymentFeatures;
+export default LandingFeatures;

@@ -3,11 +3,6 @@
 /*=== fonts ====*/
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900");
-/*===== color =====*/
-
-/*====================================================*/
-
-/*====================================================*/
 
 a {
     text-decoration: none !important;
@@ -148,7 +143,22 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
         display: none;
     }
 }
-
+@media (min-width: 1250px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  
+  .container.custom_container {
+    max-width: 1520px;
+  }
+  
 /*=============== banner css ===============*/
 
 .home_banner_area {
