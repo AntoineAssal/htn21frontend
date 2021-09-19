@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 
 import Landingpage from "./Pages/Landing-page";
 import Register from "./Pages/Register";
+import Login from "./Pages/Login";
+import Faq from "./Pages/Faq";
 import NotFound from "./Pages/404";
 
 class App extends Component {
@@ -21,6 +23,8 @@ class App extends Component {
         <Switch>
           <ScrollToTopRoute exact={true} path={"/"} component={Landingpage} />
           <ScrollToTopRoute path={"/register"} component={Register} />
+          <ScrollToTopRoute path={"/login"} component={Login} />
+          <ScrollToTopRoute path={"/faq"} component={Faq} />
           <ScrollToTopRoute component={NotFound} />
         </Switch>
       </Router>

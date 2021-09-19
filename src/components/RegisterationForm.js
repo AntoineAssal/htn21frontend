@@ -9,7 +9,7 @@ const RegisterationForm = () => {
                         <div className="col-lg-5">
                             <div className="user_info_content">
                                 <h3 className="f_p f_600 f_size_24 t_color3 mb_40"> Already have an account?</h3>
-                                <h2 className="f_p f_400 f_size_30 mb_30"> Login! </h2>
+                                <h2 className="f_p f_400 f_size_30 mb-30">Login now and<br/> start using our <br/><span className="f_700">amazing</span> features!</h2>
                                 <ul className="list-unstyled mb-0">
                                     <li><i className="ti-check"></i> Gain access to interactive training guides.</li>
                                     <li><i className="ti-check"></i> Receive curated articles, tips, and advice.</li>
@@ -37,7 +37,7 @@ const RegisterationForm = () => {
                                     <div className="extra mb_20">
                                         <div className="checkbox remember">
                                             <label>
-                                                <input type="checkbox" /> I agree to terms and conditions of this website
+                                                <input type="checkbox" /> I agree to terms and conditions.
                                             </label>
                                         </div>
 

@@ -6,6 +6,9 @@ import * as serviceWorker from "./serviceworker";
 
 import "./assets/style.css";
 import "./assets/animate.css";
+import "./assets/themify-icon/themify-icons.css";
+import "./assets/elagent/style.css"
+import "./assets/font-awesome/css/all.css"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
