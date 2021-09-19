@@ -1212,7 +1212,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .sign_info .sign_info_content ul li i {
-    color: #5e2ced;
+    color: #029209;
     margin-right: 10px;
 }
 
@@ -1252,17 +1252,17 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 .sign_info .sign-in-form .extra .forgotten-password a:hover {
-    color: #5e2ced;
+    color: #7c5c03;
 }
 
 .sign_btn_transparent {
     display: inline-block;
     background: transparent;
-    border-color: #5e2ced;
-    color: #5e2ced;
+    border-color: #7c5c03;
+    color: #7c5c03;
 }
 
 .sign_btn_transparent:hover {
-    background: #5e2ced;
+    background: #7c5c03;
     color: #fff;
 }
