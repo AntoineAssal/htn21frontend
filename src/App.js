@@ -9,6 +9,7 @@ import Landingpage from "./Pages/Landing-page";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import Faq from "./Pages/Faq";
+import Process from "./Pages/Process";
 import NotFound from "./Pages/404";
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
           <ScrollToTopRoute path={"/register"} component={Register} />
           <ScrollToTopRoute path={"/login"} component={Login} />
           <ScrollToTopRoute path={"/faq"} component={Faq} />
+          <ScrollToTopRoute path={"/process"}component={Process} />
           <ScrollToTopRoute component={NotFound} />
         </Switch>
       </Router>
