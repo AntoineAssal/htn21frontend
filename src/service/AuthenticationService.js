@@ -1,6 +1,5 @@
 URL = "https://priceisthegoatbackend.herokuapp.com"
 
-
 export const register = async (request) => {
   try {
     const apiRes = await fetch(`${BACKEND_URL}/register`, {

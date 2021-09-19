@@ -1,12 +1,14 @@
 URL = "https://priceisthegoatbackend.herokuapp.com"
 
-export const getUserInfo = async () => {
+export const addDog = async (request) => {
     try {
-        const apiRes = await fetch(`${BACKEND_URL}/api/user`, {
+        const apiRes = await fetch(`${BACKEND_URL}/dog/add`, {
             headers: {
                 'Content-Type': 'application/json',
             },
+            method: 'POST',
             credentials: 'include',
+            body: JSON.stringify(request)
         });
         return await apiRes.json(); i
     } catch (error) {
@@ -14,9 +16,9 @@ export const getUserInfo = async () => {
     }
 }
 
-export const getUserById = async (id) => {
+export const getDog = async (id) => {
     try {
-        const apiRes = await fetch(`${BACKEND_URL}/api/user/${id}`, {
+        const apiRes = await fetch(`${BACKEND_URL}/dog/${id}`, {
             headers: {
                 'Content-Type': 'application/json',
             },
