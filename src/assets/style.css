@@ -1187,8 +1187,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     max-width: 100%;
 }
 
-
-
 .sign_info {
     border: 20px solid #fff;
     background: #fbfbfd;
@@ -1241,6 +1239,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     text-align: center;
     margin-left: 7px;
 }
+
 .sign_info .sign-in-form .btn_three {
     width: auto;
     margin-top: 0;
@@ -1267,27 +1266,25 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     color: #fff;
 }
 
-
-
 .featured_item {
     margin-top: 130px;
-  }
-  
-  .featured_item .featured_content {
+}
+
+.featured_item .featured_content {
     position: relative;
-  }
-  
-  .featured_item .featured_content h3 {
+}
+
+.featured_item .featured_content h3 {
     font: 500 26px/36px "Poppins", sans-serif;
     color: #222d39;
     margin: 32px 0px 25px;
-  }
-  
-  .featured_item .featured_content p {
+}
+
+.featured_item .featured_content p {
     font-size: 15px;
-  }
-  
-  .featured_item .featured_content .icon {
+}
+
+.featured_item .featured_content .icon {
     width: 46px;
     height: 46px;
     line-height: 46px;
@@ -1302,8 +1299,115 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     color: #fff;
     display: inline-block;
     text-align: center;
-  }
-  
-  .featured_item.featured_item_two .featured_content .dot {
+}
+
+.featured_item.featured_item_two .featured_content .dot {
     left: 30px;
-  }
+}
+
+.faq_tab {
+    border: 1px solid #f4f4f9;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
+    box-shadow: 0px 2px 4px 0px rgba(12, 0, 46, 0.04);
+    padding: 50px 40px;
+}
+
+.faq_tab .nav-tabs {
+    border: 0px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.faq_tab .nav-item {
+    margin: 0px;
+}
+
+.faq_tab .nav-item .nav-link {
+    font: 400 16px/22px "Poppins", sans-serif;
+    color: #677294;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.faq_tab .nav-item .nav-link:before {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #0d660d;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: width 0.2s linear;
+    -o-transition: width 0.2s linear;
+    transition: width 0.2s linear;
+}
+
+.faq_tab .nav-item .nav-link.active {
+    color: #0d660d;
+}
+
+.faq_tab .nav-item .nav-link.active:before {
+    width: 100%;
+}
+
+.faq_content .tab-pane .card {
+    border: 0px;
+    border-radius: 0px;
+    background: transparent;
+    border-bottom: 1px solid #e4e0ee;
+}
+
+.faq_content .tab-pane .card .card-header {
+    padding: 0px;
+    border: 0px;
+    background: transparent;
+}
+
+.faq_content .tab-pane .card .card-header .btn {
+    color: #0d660d;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font: 500 18px/26px "Poppins", sans-serif;
+    padding: 20px 30px 20px 0px;
+    position: relative;
+    white-space: normal;
+}
+
+.faq_content .tab-pane .card .card-header .btn i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: none;
+    font-size: 20px;
+}
+
+.faq_content .tab-pane .card .card-header .btn i+i {
+    display: block;
+}
+
+.faq_content .tab-pane .card .card-header .btn.collapsed {
+    color: #576370;
+}
+
+.faq_content .tab-pane .card .card-header .btn.collapsed i {
+    display: block;
+}
+
+.faq_content .tab-pane .card .card-header .btn.collapsed i+i {
+    display: none;
+}
+
+.faq_content .tab-pane .card .card-body {
+    padding: 0px 0px 45px;
+    font: 400 15px/26px "Poppins", sans-serif;
+    color: #000000;
+}
